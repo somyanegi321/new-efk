@@ -16,7 +16,7 @@ metadata:
 subjects:
 - kind: User
   name: {{ .Values.user }} # Replace with the user's Azure AD identity
-apiGroup: rbac.authorization.k8s.io
+  apiGroup: rbac.authorization.k8s.io
 roleRef:
  kind: Role
  name: pod-reader-role
