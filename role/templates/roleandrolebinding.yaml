@@ -15,7 +15,7 @@ metadata:
      name: pod-reader-binding
      namespace: default
 subjects:
-   - kind: Group
+   - kind: User
      name: {{ .Values.user }} # Replace with the user's Azure AD identity
      apiGroup: rbac.authorization.k8s.io
 roleRef:
